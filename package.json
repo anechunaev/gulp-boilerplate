@@ -1,0 +1,31 @@
+{
+  "name": "GulpBoilerplate",
+  "version": "0.0.1",
+  "author": "Artem Nechunaev <artem@nechunaev.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-watch": "*",
+    "gulp-less": "*",
+    "gulp-recess": "*",
+    "gulp-uglify": "*",
+    "gulp-jshint": "*",
+    "gulp-concat": "*",
+    "gulp-imagemin": "*",
+    "gulp-minify-css": "*",
+    "gulp-minify-html": "*",
+    "gulp-html5-lint": "*",
+    "gulp-load-plugins": "*",
+    "gulp-rigger": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-plumber": "*"
+  },
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
