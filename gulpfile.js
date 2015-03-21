@@ -27,15 +27,18 @@ var path = {
 	}
 };
 
-function HandleError (error) {
-	console.error(error.toString());
-	this.emit('end');
-}
-
 gulp.task('build:html', function () {
 	gulp.src(path.src.html)
 		.pipe($.plumber())
 		.pipe($.html5Lint())
+		.pipe($.rigger())
+		.pipe($.minifyHtml())
+		.pipe(gulp.dest(path.build.html));
+});
+
+gulp.task('build:html:nolint', function () {
+	gulp.src(path.src.html)
+		.pipe($.plumber())
 		.pipe($.rigger())
 		.pipe($.minifyHtml())
 		.pipe(gulp.dest(path.build.html));
